@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculator</title>
+</head>
+<body class="body">
+   
+    <div class="container">
+        <h1 class="heading">Calculator App</h1>
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button>(</button></td>
+                    <td><button>)</button></td>
+                    <td><button class="clear">C</button></td>
+                    <td><button>%</button></td>
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>/</button></td>
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>*</button></td>
+                </tr>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>0</button></td>
+                    <td><button>.</button></td>
+                    <td><button>=</button></td>
+                    <td><button>+</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<div class="heading">
+    <h1 style="text-align: center; margin-top: 50px;">Or</h1>
+</div>
+
+    <div class="container2">
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto num1">
+                <input type="text" name="num1" oninput="calculator()" placeholder="Enter 1st number" id="num1">
+            </div>
+            <div class="col col-md-auto operator">
+                <input type="text" name="operator" oninput="calculator()" placeholder="Enter operator (+, -, *, /)" id="operator">
+            </div>
+            <div class="col col-md-auto num2">
+                <input type="text" name="num2" oninput="calculator()" placeholder="Enter 2nd number" id="num2">
+            </div>
+            <div class="col col-md-auto result">
+                <input type="text" name="result" placeholder="Result" id="result">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
+</html>
